@@ -24,6 +24,7 @@ public class BaseCategory1ServiceImpl extends ServiceImpl<BaseCategory1Mapper, B
         queryWrapper.eq("category1_id",category1Id);
 
         List<BaseCategory2> baseCategory2s = baseCategory2Service.list(queryWrapper);
+
         return baseCategory2s;
     }
 }
