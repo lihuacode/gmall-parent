@@ -8,6 +8,13 @@ spring:
     password: root
     driver-class-name: com.mysql.jdbc.Driver
 
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
+#logging:
+#  level:
+#    com.atguigu.gmall.product.mapper: debug
+
 minio:
   endpointUrl: http://192.168.31.61:9000
   accessKey: admin
