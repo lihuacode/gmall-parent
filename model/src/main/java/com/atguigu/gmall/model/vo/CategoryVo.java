@@ -8,5 +8,5 @@ import java.util.List;
 public class CategoryVo {
     private Long categoryId;
     private String categoryName;
-    private List<CategoryVo> categoryVoList;
+    private List<CategoryVo> categoryChild;
 }

@@ -5,13 +5,13 @@
     <resultMap id="CategoryVoMap" type="com.atguigu.gmall.model.vo.CategoryVo">
         <id property="categoryId" column="id"></id>
         <result property="categoryName" column="name"></result>
-        <collection property="categoryVoList" ofType="com.atguigu.gmall.model.vo.CategoryVo">
+        <collection property="categoryChild" ofType="com.atguigu.gmall.model.vo.CategoryVo">
             <id property="categoryId" column="id2"></id>
             <result property="categoryName" column="name2"></result>
-            <collection property="categoryVoList" ofType="com.atguigu.gmall.model.vo.CategoryVo">
+            <collection property="categoryChild" ofType="com.atguigu.gmall.model.vo.CategoryVo">
                 <id property="categoryId" column="id3"></id>
                 <result property="categoryName" column="name3"></result>
-                <collection property="categoryVoList" ofType="com.atguigu.gmall.model.vo.CategoryVo"></collection>
+                <collection property="categoryChild" ofType="com.atguigu.gmall.model.vo.CategoryVo"></collection>
             </collection>
         </collection>
     </resultMap>
